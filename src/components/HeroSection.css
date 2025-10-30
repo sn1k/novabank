@@ -8,7 +8,7 @@
   display: flex;
   align-items: center;
   color: #ffffff;
-  padding: 9.25rem 0 9.5rem;
+  padding: 9.25rem 7.5rem 9.5rem;
 }
 
 .hero__overlay {
@@ -20,7 +20,7 @@
 .hero__content {
   position: relative;
   max-width: 540px;
-  margin-left: 7.5rem;
+  margin: 0;
   display: flex;
   flex-direction: column;
   gap: 1.75rem;
@@ -45,22 +45,17 @@
 
 @media (max-width: 1024px) {
   .hero {
-    padding: 7.75rem 0 8rem;
-  }
-
-  .hero__content {
-    margin-left: 3.75rem;
+    padding: 7.75rem 3.75rem 8rem;
   }
 }
 
 @media (max-width: 768px) {
   .hero {
     align-items: flex-end;
-    padding: 6.5rem 0 6rem;
+    padding: 6.5rem 2.25rem 6rem;
   }
 
   .hero__content {
-    margin: 0 2.25rem;
     gap: 1.5rem;
   }
 
@@ -75,10 +70,6 @@
 
 @media (max-width: 520px) {
   .hero {
-    padding: 6rem 0 5rem;
-  }
-
-  .hero__content {
-    margin: 0 1.75rem;
+    padding: 6rem 1.75rem 5rem;
   }
 }

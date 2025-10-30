@@ -35,9 +35,18 @@
 
 .feature-card__link {
   margin-top: auto;
+  display: inline-flex;
+  align-items: center;
   font-size: 0.95rem;
   font-weight: 600;
   color: #0a2640;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.feature-card__link:hover {
+  color: rgba(10, 38, 64, 0.72);
+  text-decoration: underline;
 }
 
 @media (max-width: 768px) {

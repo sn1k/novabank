@@ -11,6 +11,7 @@
 .features-row__content {
   width: 100%;
   max-width: 1120px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 2.5rem;
