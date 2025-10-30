@@ -1,82 +1,85 @@
 .secure-savings {
-  background: #103b6b;
-  color: #ffffff;
-  padding: 4.5rem 3.5rem;
+  width: 100%;
+  background: #0a2640;
   display: flex;
   justify-content: center;
+  padding: 5.5rem 0;
 }
 
 .secure-savings__inner {
   width: 100%;
-  max-width: 1100px;
+  max-width: 1440px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 3rem;
+  padding: 0 6.75rem;
 }
 
 .secure-savings__content {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
+  max-width: 420px;
 }
 
 .secure-savings__title {
   margin: 0;
   font-size: 2.2rem;
-  line-height: 1.2;
-  font-weight: 600;
+  line-height: 1.25;
+  font-weight: 700;
+  color: #ffffff;
 }
 
 .secure-savings__description {
   margin: 0;
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: #d7e5f7;
-}
-
-.secure-savings__cta {
-  align-self: flex-start;
-  border: none;
-  border-radius: 999px;
-  background: #1dbf73;
-  color: #ffffff;
-  font-weight: 600;
-  font-size: 1rem;
-  padding: 0.9rem 2.3rem;
-  cursor: pointer;
-  transition: background 0.2s ease;
-}
-
-.secure-savings__cta:hover {
-  background: #17a15f;
-}
-
-.secure-savings__brand {
-  font-size: 2rem;
-  font-weight: 700;
-  letter-spacing: 0.25rem;
-  text-transform: uppercase;
+  font-size: 1.05rem;
+  line-height: 1.7;
   color: rgba(255, 255, 255, 0.85);
 }
 
-@media (max-width: 900px) {
+.secure-savings__cta {
+  width: fit-content;
+  background: #0ea76a;
+  color: #ffffff;
+  border: none;
+  padding: 0.75rem 2.5rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  border-radius: 0;
+}
+
+.secure-savings__logo {
+  font-size: 2.1rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  color: #ffffff;
+}
+
+@media (max-width: 1024px) {
+  .secure-savings__inner {
+    padding: 0 3rem;
+  }
+
+  .secure-savings__logo {
+    font-size: 1.9rem;
+  }
+}
+
+@media (max-width: 768px) {
   .secure-savings {
-    padding: 3.5rem 2rem;
+    padding: 4.5rem 0;
   }
 
   .secure-savings__inner {
     flex-direction: column;
     align-items: flex-start;
+    gap: 2.5rem;
+    padding: 0 2rem;
   }
 
-  .secure-savings__brand {
-    align-self: flex-start;
-  }
-}
-
-@media (max-width: 600px) {
-  .secure-savings {
-    padding: 3rem 1.5rem;
+  .secure-savings__logo {
+    letter-spacing: 0.12em;
   }
 }
