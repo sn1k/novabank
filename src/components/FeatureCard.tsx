@@ -4,12 +4,6 @@ import './FeatureCard.css'
 type FeatureCardProps = {
   title: string
   description: string
- import React, { ReactNode } from 'react'
-import './FeatureCard.css'
-
-type FeatureCardProps = {
-  title: string
-  description: string
   linkText: string
   icon: ReactNode
 }
@@ -28,11 +22,6 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ title, description, linkText,
         {linkText}
       </a>
     </article>
-  )
-}
-
-export default FeatureCard
-
   )
 }
 
