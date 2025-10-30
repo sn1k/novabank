@@ -1,4 +1,5 @@
 import React from 'react'
+import partnerLogo from '../assets/partner-logo.png'
 import './SecureSavings.css'
 
 const SecureSavings: React.FC = () => {

@@ -66,6 +66,21 @@
   .hero__subtitle {
     font-size: 1.05rem;
   }
+
+  .hero__actions {
+    gap: 0.75rem;
+  }
+
+  .hero__cta {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero__secondary-action {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 @media (max-width: 520px) {
