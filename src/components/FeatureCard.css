@@ -1,0 +1,43 @@
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: #ecf8f3;
+  border-radius: 18px;
+  padding: 2rem;
+  box-shadow: 0 16px 36px rgba(25, 77, 120, 0.12);
+  min-height: 260px;
+  width: 100%;
+}
+
+.feature-card__icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #1dbf73, #0a9660);
+}
+
+.feature-card__title {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #133b56;
+}
+
+.feature-card__description {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #355468;
+}
+
+.feature-card__link {
+  margin-top: auto;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #147f5d;
+}
+
+.feature-card__link:hover {
+  color: #0f6548;
+}
