@@ -13,7 +13,8 @@ const SecureSavings: React.FC = () => {
           </button>
         </div>
         <div className="secure-savings__logo" aria-hidden="true">
-          NovaBank
+          <span className="secure-savings__logo-mark">Nova</span>
+          <span className="secure-savings__logo-mark secure-savings__logo-mark--light">Bank</span>
         </div>
       </div>
     </section>

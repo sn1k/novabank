@@ -1,8 +1,8 @@
 .features-row {
   width: 100%;
   position: relative;
-  margin-top: -5.5rem;
-  padding: 0 6.75rem 6rem;
+  margin-top: -5rem;
+  padding: 0 7.5rem 6.25rem;
   display: flex;
   justify-content: center;
   z-index: 2;
@@ -10,16 +10,16 @@
 
 .features-row__content {
   width: 100%;
-  max-width: 1110px;
+  max-width: 1120px;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 2.25rem;
+  gap: 2.5rem;
 }
 
 @media (max-width: 1100px) {
   .features-row {
     margin-top: -4rem;
-    padding: 0 3rem 4.5rem;
+    padding: 0 3.75rem 4.5rem;
   }
 
   .features-row__content {
@@ -30,7 +30,7 @@
 @media (max-width: 768px) {
   .features-row {
     margin-top: -3rem;
-    padding: 0 2rem 3.5rem;
+    padding: 0 2.25rem 3.5rem;
   }
 
   .features-row__content {

@@ -3,7 +3,7 @@
   background: #0a2640;
   display: flex;
   justify-content: center;
-  padding: 5.5rem 0;
+  padding: 5.75rem 0;
 }
 
 .secure-savings__inner {
@@ -12,20 +12,20 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 6.75rem;
+  padding: 0 7.5rem;
 }
 
 .secure-savings__content {
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
-  max-width: 420px;
+  gap: 1.35rem;
+  max-width: 430px;
 }
 
 .secure-savings__title {
   margin: 0;
-  font-size: 2.2rem;
-  line-height: 1.25;
+  font-size: 2.25rem;
+  line-height: 1.24;
   font-weight: 700;
   color: #ffffff;
 }
@@ -33,8 +33,8 @@
 .secure-savings__description {
   margin: 0;
   font-size: 1.05rem;
-  line-height: 1.7;
-  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.72;
+  color: rgba(255, 255, 255, 0.86);
 }
 
 .secure-savings__cta {
@@ -42,24 +42,40 @@
   background: #0ea76a;
   color: #ffffff;
   border: none;
-  padding: 0.75rem 2.5rem;
+  padding: 0.85rem 2.75rem;
   font-weight: 600;
   font-size: 0.95rem;
   letter-spacing: 0.01em;
   cursor: pointer;
   border-radius: 0;
+  transition: background 0.2s ease;
+}
+
+.secure-savings__cta:hover {
+  background: #0c8f59;
 }
 
 .secure-savings__logo {
-  font-size: 2.1rem;
+  display: flex;
+  gap: 0.35rem;
+  font-size: 2.15rem;
   font-weight: 700;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.22em;
   color: #ffffff;
+  text-transform: uppercase;
+}
+
+.secure-savings__logo-mark {
+  font-weight: 700;
+}
+
+.secure-savings__logo-mark--light {
+  font-weight: 400;
 }
 
 @media (max-width: 1024px) {
   .secure-savings__inner {
-    padding: 0 3rem;
+    padding: 0 3.75rem;
   }
 
   .secure-savings__logo {
@@ -76,10 +92,10 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 2.5rem;
-    padding: 0 2rem;
+    padding: 0 2.25rem;
   }
 
   .secure-savings__logo {
-    letter-spacing: 0.12em;
+    letter-spacing: 0.14em;
   }
 }
