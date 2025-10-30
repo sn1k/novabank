@@ -1,24 +1,38 @@
-import React from 'react'
+import React, { type ReactNode } from 'react'
+import './FeatureCard.css'
+
+type FeatureCardProps = {
+  title: string
+  description: string
+ import React, { ReactNode } from 'react'
 import './FeatureCard.css'
 
 type FeatureCardProps = {
   title: string
   description: string
   linkText: string
-  icon: string
-  iconAlt: string
+  icon: ReactNode
 }
 
-const FeatureCard: React.FC<FeatureCardProps> = ({ title, description, linkText, icon, iconAlt }) => {
+const FeatureCard: React.FC<FeatureCardProps> = ({ title, description, linkText, icon }) => {
   return (
-    <div className="feature-card">
-      <img className="feature-card__icon" src={icon} alt={iconAlt} />
-      <h3 className="feature-card__title">{title}</h3>
-      <p className="feature-card__description">{description}</p>
+    <article className="feature-card">
+      <div aria-hidden="true" className="feature-card__icon">
+        {icon}
+      </div>
+      <div className="feature-card__body">
+        <h3 className="feature-card__title">{title}</h3>
+        <p className="feature-card__description">{description}</p>
+      </div>
       <a className="feature-card__link" href="#">
         {linkText}
       </a>
-    </div>
+    </article>
+  )
+}
+
+export default FeatureCard
+
   )
 }
 

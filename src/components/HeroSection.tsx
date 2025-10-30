@@ -4,7 +4,6 @@ import './HeroSection.css'
 const HeroSection: React.FC = () => {
   return (
     <section className="hero">
-      <div className="hero__overlay" />
       <div className="hero__content">
         <h1 className="hero__title">Built for companies ready to grow</h1>
         <p className="hero__subtitle">
