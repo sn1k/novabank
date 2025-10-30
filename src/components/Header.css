@@ -12,9 +12,14 @@
 }
 
 .header__logo {
-  font-size: 1.6rem;
-  font-weight: 700;
-  color: #109c63;
+  display: flex;
+  align-items: center;
+}
+
+.header__logo-image {
+  height: 36px;
+  width: auto;
+  display: block;
 }
 
 .header__actions {

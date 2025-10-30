@@ -15,9 +15,14 @@
 }
 
 .footer__logo {
-  font-size: 1.7rem;
-  font-weight: 700;
-  color: #109c63;
+  display: flex;
+  align-items: center;
+}
+
+.footer__logo-image {
+  height: 44px;
+  width: auto;
+  display: block;
 }
 
 .footer__links {
@@ -49,10 +54,23 @@
 }
 
 .footer__bottom {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
   font-size: 0.85rem;
   color: #6b7a89;
   border-top: 1px solid rgba(19, 59, 86, 0.1);
   padding-top: 1.5rem;
+}
+
+.footer__partner-logo {
+  height: 32px;
+  width: auto;
+  display: block;
+}
+
+.footer__disclaimer {
+  margin: 0;
 }
 
 @media (max-width: 900px) {
@@ -67,6 +85,12 @@
 
   .footer__links {
     gap: 2rem;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
   }
 }
 

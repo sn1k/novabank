@@ -1,4 +1,5 @@
 import React from 'react'
+import partnerLogo from '../assets/partner-logo.png'
 import './SecureSavings.css'
 
 const SecureSavings: React.FC = () => {
@@ -13,7 +14,7 @@ const SecureSavings: React.FC = () => {
           </button>
         </div>
         <div className="secure-savings__brand" aria-hidden="true">
-          NovaBank
+          <img className="secure-savings__brand-image" src={partnerLogo} alt="" />
         </div>
       </div>
     </section>

@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   min-height: 520px;
-  background-image: url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1920&q=80');
+  background-image: url('../assets/hero.png');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -41,6 +41,43 @@
   font-weight: 400;
 }
 
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.hero__cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 999px;
+  background: #1dbf73;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.95rem 2.6rem;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.hero__cta:hover {
+  background: #17a15f;
+  transform: translateY(-1px);
+}
+
+.hero__secondary-action {
+  align-self: center;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.hero__secondary-action:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
 @media (max-width: 900px) {
   .hero {
     min-height: 460px;
@@ -53,6 +90,21 @@
 
   .hero__subtitle {
     font-size: 1.1rem;
+  }
+
+  .hero__actions {
+    gap: 0.75rem;
+  }
+
+  .hero__cta {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero__secondary-action {
+    width: 100%;
+    text-align: center;
   }
 }
 
