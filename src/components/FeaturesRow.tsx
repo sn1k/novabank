@@ -11,7 +11,11 @@ const FeaturesRow: React.FC = () => {
 
   const automationIcon = (
     <svg aria-hidden="true" viewBox="0 0 32 32">
-      <path d="M6.5 8.5h19v6h-19zM6.5 17.5h11v6h-11zM19.5 17.5h6" strokeLinecap="round" strokeLinejoin="round" />
+      <path
+        d="M6.5 8.5h19v6h-19zM6.5 17.5h11v6h-11zM19.5 17.5h6"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
       <circle cx="23" cy="20.5" r="1.8" />
     </svg>
   )
@@ -39,17 +43,3 @@ const FeaturesRow: React.FC = () => {
           title="Smart expense management tools"
           description="Automated dashboards to schedule payments and monitor liquidity in real time."
           linkText="See conditions"
-          icon={automationIcon}
-        />
-        <FeatureCard
-          title="Exclusive partner perks"
-          description="Unlock discounts across our partner network with preferential rates for NovaBank clients."
-          linkText="See conditions"
-          icon={perksIcon}
-        />
-      </div>
-    </section>
-  )
-}
-
-export default FeaturesRow

@@ -10,10 +10,10 @@ const HeroSection: React.FC = () => {
           Enjoy 2.27% TIN and 2.25% APR for 6 months with your new corporate savings account.
         </p>
         <div className="hero__actions">
-          <button className="hero__primary" type="button">
+          <button className="hero__cta" type="button">
             Create a business account
           </button>
-          <a className="hero__secondary" href="#features">
+          <a className="hero__secondary-action" href="#features">
             Explore features
           </a>
         </div>

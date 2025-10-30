@@ -56,6 +56,7 @@
   background: #0c8f59;
 }
 
+/* Opción 1: logo en texto */
 .secure-savings__logo {
   display: flex;
   gap: 0.4rem;
@@ -73,6 +74,21 @@
 .secure-savings__logo-mark--light {
   font-weight: 400;
   color: rgba(255, 255, 255, 0.72);
+}
+
+/* Opción 2: logo en imagen */
+.secure-savings__brand {
+  display: flex;
+  align-items: center;
+}
+
+.secure-savings__brand-image {
+  max-width: 220px;
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: brightness(0) invert(1);
+  opacity: 0.9;
 }
 
 @media (max-width: 1024px) {

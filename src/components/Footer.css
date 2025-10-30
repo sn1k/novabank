@@ -1,88 +1,32 @@
-.footer {
-  background: #ffffff;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  padding: 0 0 3rem;
+import React from 'react'
+import './Footer.css'
+
+const Footer: React.FC = () => {
+  return (
+    <footer className="footer">
+      <div className="footer__inner">
+        <div className="footer__top">
+          <div className="footer__logo">NovaBank</div>
+          <div className="footer__links">
+            <div className="footer__column">
+              <h4 className="footer__heading">Contact</h4>
+              <a href="#">Contact</a>
+              <a href="#">Who we are</a>
+            </div>
+            <div className="footer__column">
+              <h4 className="footer__heading">Legal information</h4>
+              <a href="#">Legal terms</a>
+              <a href="#">Privacy policy</a>
+              <a href="#">Cookies</a>
+            </div>
+          </div>
+        </div>
+        <div className="footer__bottom">
+          This is a demo of the Identfy by Izertis ecosystem | For further information, please contact XXX@izertis.com
+        </div>
+      </div>
+    </footer>
+  )
 }
 
-.footer__inner {
-  width: 100%;
-  max-width: 1440px;
-  padding: 4rem 7.5rem 0;
-  display: flex;
-  flex-direction: column;
-  gap: 3.25rem;
-}
-
-.footer__top {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 4.5rem;
-}
-
-.footer__logo {
-  font-size: 1.9rem;
-  font-weight: 700;
-  color: #0ea76a;
-  letter-spacing: -0.01em;
-}
-
-.footer__links {
-  display: flex;
-  gap: 5rem;
-}
-
-.footer__column {
-  display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
-  min-width: 160px;
-}
-
-.footer__heading {
-  margin: 0;
-  font-size: 1.02rem;
-  font-weight: 600;
-  color: #0a2640;
-}
-
-.footer__column a {
-  font-size: 0.96rem;
-  color: #4f6074;
-}
-
-.footer__bottom {
-  font-size: 0.86rem;
-  color: #6b7a89;
-  border-top: 1px solid rgba(10, 38, 64, 0.12);
-  padding-top: 1.75rem;
-  line-height: 1.7;
-}
-
-@media (max-width: 1024px) {
-  .footer__inner {
-    padding: 3rem 3.75rem 0;
-  }
-
-  .footer__links {
-    gap: 2.5rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .footer__inner {
-    padding: 2.75rem 2.25rem 0;
-  }
-
-  .footer__top {
-    flex-direction: column;
-    gap: 2.5rem;
-  }
-
-  .footer__links {
-    flex-direction: column;
-    gap: 2rem;
-  }
-}
+export default Footer
